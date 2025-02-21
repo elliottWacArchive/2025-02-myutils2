@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todolist</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
     <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <div id="afaire">
-            <h1>À faire</h1>
             <div id="afaire-add">
+                <h1>À faire</h1>
                 <input type="text" name="entry" id="entry">
                 <button id="add" onclick="addEntry()">Ajouter</button>
             </div>
@@ -21,8 +22,10 @@
             <h1>Terminé</h1>
             <div id="fini-list"></div>
         </div>
+        <div class="inline">
+            <button onclick="save()">Save</button>
+            <button onclick="load()">Load</button>
+        </div>
     </div>
-    <button onclick="save()">Save</button>
-    <button onclick="load()">Load</button>
 </body>
 </html>

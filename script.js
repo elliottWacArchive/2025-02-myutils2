@@ -66,6 +66,8 @@ async function save() {
 async function load() {
     const response = await fetch('db.php?function=load')
     const data = await response.json();
+    document.getElementById("afaire-list").innerHTML = "";
+    document.getElementById("fini-list").innerHTML = "";
     data.forEach(element => {
         if (element.type == 1) {
             const list = document.getElementById("afaire-list");

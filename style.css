@@ -12,7 +12,103 @@ body {
 }
 
 .container {
-    width: 50%;
-    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-height: 90vh;
     background-color: #413f4c;
+    border-radius: 20px;
+    padding: 10px;
 }
+
+.element {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #463d77;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+button, input {
+    outline: none;
+    background-color: #302c44;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    color: #fff;
+    border: #ccc 1px solid;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #423199;
+}
+
+.element .content {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#afaire, #fini {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+#afaire-list, #fini-list {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#afaire-add {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#afaire-add h1 {
+    width: 60%;
+}
+
+#afaire-add input {
+    width: 40%;
+}
+
+.inline {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

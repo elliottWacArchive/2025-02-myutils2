@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Tommy Regular';
+    src: url('fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf');
+}
+
+@font-face {
+    font-family: 'Tommy Black';
+    src: url('fonts/MADE\ TOMMY\ Black_PERSONAL\ USE.otf');
+}
+
+body, button, input {
+    font-family: 'Tommy Regular';
+}
+
+h1 {
+    font-family: 'Tommy Black';
+}
